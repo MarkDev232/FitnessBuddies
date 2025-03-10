@@ -1,0 +1,29 @@
+.big-shoulders-100 { font-weight: 100; }
+.big-shoulders-400 { font-weight: 400; }
+.big-shoulders-700 { font-weight: 700; }
+.big-shoulders-900 { font-weight: 900; }
+
+.fitbuddy-logo {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FF5733; /* Vibrant fitness orange */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.fitbuddy-logo span {
+    color: #1E90FF; /* Strong blue contrast */
+}
+
+.fitbuddy-logo-footer {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e7e7e7; /* Vibrant fitness orange */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.fitbuddy-logo-footer span {
+    color: #1E90FF; /* Strong blue contrast */
+}
