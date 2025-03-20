@@ -1,0 +1,40 @@
+/* Ensure sidebar covers the full left side */
+/* Sidebar Styling */
+.sidebar-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust width if needed */
+    height: 100vh;
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #666 #343a40; /* Scrollbar thumb and track */
+}
+
+/* Chrome, Edge, and Safari */
+.sidebar-bg::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+}
+
+.sidebar-bg::-webkit-scrollbar-track {
+    background: #343a40; /* Sidebar background color */
+}
+
+.sidebar-bg::-webkit-scrollbar-thumb {
+    background: #666; /* Scrollbar color */
+    border-radius: 4px; /* Rounded edges */
+}
+
+.sidebar-bg::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Lighter on hover */
+}
+
+
+/* Adjust content so it doesn’t overlap sidebar */
+.main-content {
+    margin-left: 250px; /* Same width as sidebar */
+    padding: 20px;
+}

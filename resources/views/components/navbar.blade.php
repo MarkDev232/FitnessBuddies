@@ -18,18 +18,22 @@
                 </li>
             </ul>
 
-            <!-- Login/Dashboard/Logout Button (Always on the right) -->
+            <!-- Login/Dashboard/Logout/User Page (Always on the right) -->
             <div class="ms-auto">
                 @if (Route::has('login'))
                     @auth
-                        <x-button href="{{ url('/dashboard') }}" class="btn-success">Dashboard</x-button>
+                        <!-- User Page Button -->
+                        <a href="{{ route(name: 'user.page') }}" class="btn btn-secondary me-2">User Page</a>
+
+                        <!-- Dashboard Button -->
+                        <a href="{{ route('dashboard') }}" class="btn btn-primary me-2">Dashboard</a>
 
                         <!-- Logout Button -->
-                        <form method="POST" action="{{ route('logout') }}">
+                        <form method="POST" action="{{ route('logout') }}" class="d-inline">
                             @csrf
                             <button type="submit" class="btn btn-danger">Logout</button>
                         </form>
-                        
+
                     @else
                         @if (Request::route()->getName() === 'login')
                             <x-button href="{{ route('register') }}">Sign Up</x-button>

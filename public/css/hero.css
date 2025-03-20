@@ -4,6 +4,7 @@
     height: 60vh;
     
 }
+
 .hero .content {
     position: absolute;
     top: 50%;
@@ -25,6 +26,7 @@
 }
 
 .partners img {
+
     max-height: 80px; /* Adjust height as needed */
     width: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensures logos fit well */

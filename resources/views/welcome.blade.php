@@ -3,16 +3,23 @@
 @section('title', 'Ultimate Fitness Guide')
 
 @section('content')
-    <!-- Hero Section -->
-    <section class="hero text-white text-center py-5 position-relative "
-        style="background: url('{{ asset('images/bg-hero.png') }}') no-repeat center center/cover;">
-        <div class="overlay"></div>
-        <div class="container position-relative content">
-            <h1 class="fw-bold">Transform Your Body with Our Ultimate Fitness Guide</h1>
-            <p class="lead">A complete step-by-step plan to achieve your health and fitness goals.</p>
-            <a href="{{ route('register') }}" class="btn btn-primary btn-lg">Get Started Now</a>
-        </div>
-    </section>
+
+<!-- Hero Section -->
+<section class="hero text-white text-center d-flex align-items-center justify-content-center position-relative"
+    style="position: absolute; left: -125px; top: -20px;width: 100vw; height: 100vh; background: url('{{ asset('images/bg-hero.png') }}') no-repeat center center fixed; background-size: cover;">
+    
+    <!-- Dark overlay -->
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+
+    <!-- Container should be inside the full-width section -->
+    <div class="position-relative z-1 text-center">
+        <h1 class="fw-bold">Transform Your Body with Our Ultimate Fitness Guide</h1>
+        <p class="lead">A complete step-by-step plan to achieve your health and fitness goals.</p>
+        <a href="{{ route('register') }}" class="btn btn-primary btn-lg">Get Started Now</a>
+    </div>
+</section>
+
+
     <!-- Partners Section -->
     <section class="partners py-5 bg-light my-5">
         <div class="container text-center">
