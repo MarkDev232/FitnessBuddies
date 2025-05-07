@@ -21,7 +21,7 @@
             <i class="bi bi-clipboard-check"></i> Workout Plans
         </a>
         <a href="{{ route('nutrition_guides') }}" class="nav-link {{ request()->routeIs('nutrition_guides') ? 'active' : '' }}">
-            <i class="bi bi-nutrition"></i> Nutrition Guides
+            <i class="bi bi-backpack4"></i> Nutrition Guides
         </a>
         <a href="{{ route('support') }}" class="nav-link {{ request()->routeIs('support') ? 'active' : '' }}">
             <i class="bi bi-headset"></i> Customer Support
@@ -56,7 +56,8 @@
         border-radius: 5px;
         display: flex;
         align-items: center;
-        transition: all 0.3s ease;
+        margin-top: 10px;
+        
     }
 
     /* Icons */
@@ -74,6 +75,7 @@
     /* Hover Effect */
     .nav-link:hover {
         background-color: rgba(255, 255, 255, 0.1);
-        transform: translateX(5px); /* Slight move on hover */
+        transform: translateX(3px); /* Slight move on hover */
+        color:white;
     }
 </style>
